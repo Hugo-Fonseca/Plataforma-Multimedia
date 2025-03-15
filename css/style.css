@@ -1,0 +1,206 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+}
+body{
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+    background-color: #dae1e7;
+    box-sizing: border-box; /*sirve para que el ancho y la altura de un elemento incluyan el relleno y el borde. */
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    background-color:#183661;
+    /*background-color: #1c4b82;*/
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    position:relative;
+    box-sizing: border-box;
+    overflow: hidden; /*EVITA DESPLAZAMIENTO*/
+    /*padding-inline: rem 2 rem;*/
+}
+
+/*.Inicio{
+    display: flex;
+    align-items: center;
+    padding: 0.5px 0.5px 0.5px 0.5px;
+    background-color: #1c4b82;
+    color: white;
+    width: 50%;*/
+    /*position:relative;*/
+/*}*/
+
+.Titulo{
+    /*font-style:oblique;*/
+    text-align: left;
+    margin-left: 1%;
+    font-size: 2rem;
+    color:white;
+}
+
+.logo{
+    width: 8%;
+    height: auto;
+}
+
+.busqueda{
+    padding: 14px 310px;
+    position: relative;
+    margin-left: 2%;
+}
+
+.ayuda{
+    width: 5%;
+    height: auto;
+    margin-left: 3%;
+    margin-top: -1.7%;
+}
+
+.dudas{
+    /*text-align:unset;*/
+    position:fixed;
+    top: 15%;
+    right: 14.5%;
+    text-align:end;
+    font-size: 79%;
+}
+
+.carro{
+    width: 5%;
+    height: auto;
+    /*top: 400px;*/
+    margin-left: 6%;
+    margin-bottom: 1.5%;
+}
+    
+.micarrito{
+    position:fixed;
+    top: 15%;
+    right: 1.8%;
+    text-align:end;
+    font-size: 79%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding: 2.8%;
+    /*background-color: rgb(28, 75, 130);*/
+    background-color: #1e60a9;
+    /*background-color: #0879a6;*/
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    position:relative;
+    /*padding-inline: rem 2 rem;*/
+}
+
+
+.computadores{
+    /*text-align:unset;*/
+    position:fixed;
+    top:25.5%;
+    left: 3%;
+    text-align:start;
+    font-size: 1.6rem;
+}
+
+.tabletas{
+    /*text-align:unset;*/
+    position:fixed;
+    top:25.5%;
+    left: 23%;
+    text-align:start;
+    font-size: 1.6rem;
+}
+
+.progdesignfree{
+    /*text-align:unset;*/
+    position:fixed;
+    top:22.5%;
+    left: 43%;
+    text-align:start, center;
+    font-size: 1.6rem;
+}
+
+.programing{
+    /*text-align:unset;*/
+    position:fixed;
+    top:25.5%;
+    left: 63%;
+    text-align:start;
+    font-size: 1.6rem;
+}
+
+.licencias{
+    /*text-align:unset;*/
+    position:fixed;
+    top:22.5%;
+    left: 80.5%;
+    text-align:end,center;
+    font-size: 1.6rem;
+}
+
+.pagIlustrator{
+    display: flex;
+    position: fixed;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 0.5%;
+    margin-left: 20%;
+}
+
+.pagPhotoshop{
+    display: flex;
+    position: fixed;
+    width: 41%;
+    height: auto;
+    align-items: center;
+    margin-top: 0.5%;
+    margin-left: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.Titulo{
+    color: rgb(12, 12, 48);
+    text-align: center;
+    font-size: 5rem;
+    padding: 500px 0 10px;
+}*/
