@@ -229,11 +229,98 @@ header {
 }
 
 
+.carrusel-producto {
+    max-width: 300px; /* Se reduce el tamaño del carrusel */
+    margin: auto; /* Centrarlo dentro de la columna */
+}
+
+.carousel-inner img {
+    height: 220px; /* Ajusta la altura de las imágenes */
+    object-fit: contain; /* Evita que las imágenes se deformen */
+}
+
+.carousel-indicators button {
+    width: 12px;  /* Tamaño del círculo */
+    height: 12px;
+    border-radius: 50%;  /* Hace que sean completamente redondos */
+    background-color: #A66A3C; /* Color del indicador */
+    border: none;
+    margin: 5px;
+    opacity: 0.5; /* Para dar efecto de transparencia */
+}
+
+.carousel-indicators .active {
+    opacity: 1; /* El botón activo es más visible */
+    background-color: #8B572A; /* Color más oscuro para destacar */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Cambia el color de las flechas a blanco por defecto */
+    transition: filter 0.3s ease-in-out;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    filter: invert(50%) sepia(100%) hue-rotate(200deg) saturate(500%); /* Cambia a un tono diferente */
+}
+
+.info-box {
+    max-width: 90%; /* Aumenta el ancho máximo */
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    padding: 15px;
+    border: 3px solid #004400;
+    border-radius: 8px;
+}
 
 
+.btn-carrito {
+    background-color: #c47042;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-carrito:hover {
+    background-color: #a35734;
+}
 
 
+.titulo-interes {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
 
+.imagenes-interes {
+    display: flex;
+    gap: 10px; /* Espacio entre imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+}
+
+.imagen-cuadro {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 48%; /* Asegura que ocupen la mitad del contenedor */
+}
+
+.imagen-cuadro img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.info-box {
+    max-width: 90%;
+    width: 100%;
+    padding: 15px;
+    border: 3px solid #004400;
+    border-radius: 8px;
+}
 
 
 
