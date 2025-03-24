@@ -87,10 +87,11 @@ footer{
 
 .menu {
     background-color: #1e60a9;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 10px;/*gap se utiliza para definir el espacio entre elementos en un contenedor que utiliza un modelo de diseño de cuadrícula (grid) o un diseño de flexbox.*/
+    /*gap: 10px;/*gap se utiliza para definir el espacio entre elementos en un contenedor que utiliza un modelo de diseño de cuadrícula (grid) o un diseño de flexbox.*/
 }
 
 .menu a {
@@ -105,8 +106,113 @@ footer{
     transition: background-color 0.3s, transform 0.2s;
 }
 
+/* Estilos para el carrusel */
+.carousel-inner img {
+    /*margin-top: -auto;*/
+    height: 300px; /* AJUSTA LA ALTURA DE LAS IMÁGENES EN GENERAL DEL CARRUSEL */
+    /*object-fit: cover; /* MANTIENE LA PROPORCIÓN DE LA IMAGEN Y RECORTA SI ES NECESARIO */
+    width: auto; /* ASEGURA QUE LA IMAGEN OCUPA TODO EL ANCHO DEL CONTENEDOR */
+}
+
+.carousel-inner{
+    margin-top: -31px;
+}
+
+.illustrator-img {
+    width: 100%; /* AJUSTA EL ANCHO MÁXIMO DE LA IMAGEN DE ILLUSTRATOR */
+    height: auto; /* MANTIENE LA ALTURA PROPORCIONAL */
+    margin-left: 20px; /* ESPACIO A LA IZQUIERDA PARA SEPARAR LAS IMÁGENES */
+}
+
+/* Opcional: Ajustar el contenedor del carrusel */
+.carrusel-container {
+    max-width: 2200px; /* LIMITA EL ANCHO MÁXIMO DEL CARRUSEL */
+    /*margin: auto; /* CENTRA EL CARRUSEL EN LA PÁGINA */
+}
+
+/*Ubicación de las flechas de desplazamienhto del carrusel principal*/
+.carousel-control-prev{
+    margin-left: -81px;
+}
+
+.carousel-control-next{
+    margin-right: -81px;
+    /*color: white;*/
+}
+
+/* Estilo para la flecha anterior del carrusel de destacados */
+.prev-destacados {
+    position: absolute; /* PERMITE MOVER LA FLECHA A UNA UBICACIÓN ESPECÍFICA DENTRO DEL CARRUSEL */
+    left: 160px; 
+    top: 50%;
+    transform: translateY(-50%); /* AJUSTA PARA QUE ESTÉ CENTRADA VERTICALMENTE*/
+    background: #1c3b6c;
+    color: white; 
+    border: none; 
+    padding: 15px; 
+    cursor: pointer; 
+    border-radius: 5px;
+}
+
+/* Estilo para la flecha siguiente del carrusel de destacados */
+.next-destacados {
+    position: absolute;
+    right: 160px;
+    top: 50%; 
+    transform: translateY(-50%);
+    background: #1c3b6c; 
+    color: white; 
+    border: none; 
+    padding: 15px; 
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .menu a:hover {
     background-color: #123b6b;
     transform: scale(1.05); /* Efecto de crecimiento al pasar el mouse */
     text-decoration: none;
+}
+
+footer{
+    background-color:#183661;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    padding: 0.1px;
+    padding-bottom: -1px;
+}
+
+/*.custom-footer{
+
+}*/
+
+.nombresIntegrantes{
+    padding-top: -702px;
+    flex: 0.9;
+}
+
+.contenidoFooter{
+    display: flex;
+    justify-content: space-between;/*Espacio entre los elementos*/
+    align-items: center;
+}
+
+.info{
+    align-items: end;
+    padding-right: 82px;
+    padding-top: 52px;
+}
+
+.logoFooter{
+    display: flex;
+    position: relative;
+    align-items: end;
+    /*align-items: start;*/
+    width: 92px;
+    /*top: -3px;*/
+    /*left: 625px;*/
+    left: 130px;
+    bottom:1 px;
 }

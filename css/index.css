@@ -11,10 +11,10 @@
 
 .destacados {
     text-align: center;
-    margin: 20px auto;
+    /*margin: 20px auto;*/
     background-color: #9FBDE0;
     padding: 20px;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 
 .titulo-destacados {
@@ -33,6 +33,7 @@
     justify-content: center;
     overflow-x: hidden;
     position: relative;
+    padding-top: 12px;
 }
 
 .productos {
