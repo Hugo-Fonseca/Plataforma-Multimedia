@@ -26,14 +26,6 @@ body{
     overflow: hidden; /* Evita que el contenido se desborde */
 }
 
-.producto{
-    border-radius: 12px;
-    align-items: center;
-    display:block;
-    width: 5px;
-    height: auto;
-}
-
 .tituloCategoria{
     background-color: #fff;
     color: #1c3b6c;
@@ -57,4 +49,41 @@ body{
     height: auto;
     margin-left: 68px;
     margin-top: 20px;
+}
+
+.tableta2{
+    width: 850px;
+    /*height: auto;*/
+    margin-left: 68px;
+    margin-top: 20px;
+}
+
+.tableta3{
+    width: 950px;
+    /*height: auto;*/
+    margin-left: 68px;
+    margin-top: 20px;
+}
+
+.tableta4{
+    width: 350px;
+    height: auto;
+    margin-left: 68px;
+    margin-top: 20px;
+}
+
+.tableta5{
+    width: 850px;
+    /*height: auto;*/
+    margin-left: 68px;
+    margin-top: 20px;
+}
+
+.tableta6{
+    width: 950px;
+    padding: 12px;
+    padding-top: 0.2px;
+    /*height: auto;*/
+    /*margin-left: 68px;
+    margin-top: 20px;*/
 }
