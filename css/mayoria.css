@@ -1,0 +1,16 @@
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(2, auto);  /* 2 filas */
+    gap: 20px; /* Espacio entre elementos */
+    justify-items: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 900px; /* Ajusta según el diseño */
+}
+
+.producto img {
+    width: 100%;
+    max-width: 250px; /* Ajusta el tamaño según necesites */
+    border-radius: 10px;
+}

@@ -1,0 +1,65 @@
+.carrusel-container {
+    background-color: #9FBDE0;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    align-items: center;
+    flex-direction: column; /* Para que el carrusel y la imagen extra se alineen en columna */
+    /*margin-top: 20px;*/ /* Espaciado opcional */
+}
+
+
+.destacados {
+    text-align: center;
+    margin: 20px auto;
+    background-color: #9FBDE0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.titulo-destacados {
+    background-color: #1c3b6c;
+    color: white;
+    padding: 10px;
+    margin-top: -20.5%;
+    margin-bottom: 1.5%;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.carrusel-destacados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.productos {
+    display: flex;
+    gap: 15px;/*Espacio entre los productos*/
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.producto {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100px;
+    height: auto;
+}
+
+.prev, .next {
+    background: #1c3b6c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
