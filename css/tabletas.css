@@ -7,6 +7,8 @@ html{
 body{
     margin: 0; /* Eliminar márgenes por defecto */
     padding: 0; /* Eliminar padding por defecto */
+    width: 100%;
+    height: auto;
     overflow-x: hidden; /* Evitar el desplazamiento horizontal */
     background-color: #9FBDE0;
     box-sizing: border-box; /*sirve para que el ancho y la altura de un elemento incluyan el relleno y el borde. */
@@ -32,7 +34,7 @@ body{
     height: auto;
 }
 
-.tituloTabletas{
+.tituloCategoria{
     background-color: #fff;
     color: #1c3b6c;
     padding: 5px;
@@ -42,6 +44,12 @@ body{
     margin-top: 2%;
     margin-left: 5%;
     display: inline-block;
+}
+
+.pocisionTitulosCat{
+    align-items: start;
+    margin-top: 2%;
+    margin-left: 5%;
 }
 
 .tableta1{

@@ -1,11 +1,19 @@
+.espacioFondoTituloCat{
+    background-color: #9FBDE0;
+}
+
 .productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas */
     gap: 20px; /* Espacio entre elementos */
     justify-items: center;
     align-items: center;
-    margin: 20px auto;
-    max-width: 900px; /* Ajusta según el diseño */
+    /*margin: 20px auto;*/
+    /*max-width: 900px; /* Ajusta según el diseño */
+    max-width: 2024px;
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 29px;
 }
 
 .producto {
