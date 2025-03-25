@@ -1,0 +1,188 @@
+/* Reseteamos los parametros del CSS del navegador */
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    min-height: 100vh; /* Cambié height: 100% a min-height: 100vh */
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+    overflow-y: hidden; /* Para eliminar el scroll vertical */
+}
+
+/* CSS que manejara todo el body del html de la sección Programación */
+body {
+    background-color: #ffffff !important;
+    box-sizing: border-box; /* Para que el ancho y la altura de los elementos incluyan relleno y borde */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garantiza que el cuerpo ocupe al menos toda la altura de la pantalla */
+    margin: 0; /* Asegura que no haya márgenes indeseados */
+}
+
+/* Estilo que maneja el header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #183661;
+    color: white;
+    padding: 1% 2%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Hace que el logo y el texto estén un poco separados entre sí */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Hace que el logo tenga un tamaño menor y se ajuste al header */
+.logo {
+    width: 60px; 
+    height: auto;
+}
+
+/* Ajusta el texto "MULTI STAND" del header */
+.Titulo {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 0;
+}
+
+/* Ajusta el tamaño del input de busqueda del header */
+.busqueda {
+    width: 40%; /* Ajustable para mejor responsividad */
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Ajusta la imagen del logo de ayuda para que se vea mejor en el header */
+.AyudaImg {
+    width: 40px; /* Tamaño uniforme */
+    height: auto;
+}
+
+/* Ajusta el texto de "Ayuda" en el header */
+.AyudaText {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/*------- BARRA DE NAVEGACION --------------*/
+
+/* Ajusta toda la parte del contenedor del menu */
+.menu {
+    background-color: #1e60a9;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajusta los divs de los links del menu */
+.menu a {
+    background-color: #174c88; /* Color más oscuro para los botones */
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hace que cuando pasemos el mouse por encima del los links cambien de color su fondo y se agrande una escala de 1.05 */
+.menu a:hover {
+    background-color: #0f3969;
+    transform: scale(1.05); /* Efecto de crecimiento al pasar el mouse */
+    text-decoration: none;
+}
+
+/* Ajusta el espacio entre los enlaces */
+.navbar-nav {
+    gap: 15px; 
+}
+
+/*------- FOOTER ---------------- */
+
+.custom-footer {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos en los extremos */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho disponible */
+    background-color: #183661;
+    color: white;
+    padding: 10px;
+    margin-top: auto; /* Esto asegura que el footer quede al final */
+}
+
+.textoFooter {
+    margin-top: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Estudiante {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.info{
+    text-align: center;
+}
+
+.logoFooter{
+    width: 25px;
+}
+
+.TituloFooter{
+    font-size: 14px;
+}
+
+.textoFooter2{
+ font-size: 14px;
+}
+
+
+
+/*------- CSS DE LAS IMAGENES ------- */
+
+/* Ajusta el tamaño de la imagen del logo de VSC */
+.VSC-Img {
+    width: 150px;
+    height: auto;
+}
+
+.Eclipse-Img {
+    width: 150px;
+    height: auto;    
+}
+
+.Netbeans-Img {
+    width: 130px;
+    height: auto;
+}
+
+.SublimeText-Img {
+    width: 150px;
+    height: auto;
+}
+
+/*------------- CARDS ----------------*/
+
+.ProgramacionSoftwares {
+    display: flex;
+}
+
+.card {
+    margin: 5px;
+    padding: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+}
