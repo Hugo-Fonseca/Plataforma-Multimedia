@@ -44,6 +44,10 @@ header {
     height: auto;
 }
 
+.logo:hover{
+    transform: scale(1.1);
+}
+
 /* Ajusta el texto "MULTI STAND" del header */
 .Titulo {
     font-size: 1.8rem;
@@ -86,6 +90,11 @@ header {
 .AyudaImg {
     width: 40px; /* Tamaño uniforme */
     height: auto;
+}
+
+/*Agranda un poco la imagen cuando el mouse pasa x encima*/
+.AyudaImg:hover{
+    transform: scale(1.1);
 }
 
 /* Ajusta el texto de "Ayuda" en el header */
@@ -145,7 +154,9 @@ header {
     left: 50%;
     transform: translateX(-50%);
 }
-
+.nombresIntegrantes {
+    margin-top: 10px;
+}
 .Estudiante {
     font-size: 14px;
     margin-bottom: 4px;
@@ -153,6 +164,7 @@ header {
 
 .info{
     text-align: center;
+    margin-top: 6px;
 }
 
 .logoFooter{
