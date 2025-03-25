@@ -53,13 +53,35 @@ footer{
 }
 
 /* Barra de búsqueda */
+
+.search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
 .busqueda {
-    width: 40%; /* Ajustable para mejor responsividad */
     padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
+    padding-right: 40px; /* Para dejar espacio para el ícono */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 950px;
+  }
+  
+  .search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
     border: none;
-}
+    cursor: pointer;
+  }
+  
+  .search-button i {
+    font-size: 18px;
+    color: #333;
+  }
 
 /* Contenedor de iconos */
 .iconos {
