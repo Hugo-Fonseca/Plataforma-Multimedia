@@ -5,8 +5,8 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     min-height: 100vh; /* Cambié height: 100% a min-height: 100vh */
-    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
-    overflow-y: hidden; /* Para eliminar el scroll vertical */
+    overflow-x: hidden !important; /* Evita el desplazamiento horizontal */
+    
 }
 
 /* CSS que manejara todo el body del html de la sección Programación */
@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
     background-color: #183661;
     color: white;
-    padding: 1% 2%;
+    padding: 20px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -77,9 +77,6 @@ header {
 /* Ajusta toda la parte del contenedor del menu */
 .menu {
     background-color: #1e60a9;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
 }
 
 /* Ajusta los divs de los links del menu */
@@ -111,16 +108,17 @@ header {
 
 .custom-footer {
     display: flex;
-    justify-content: space-between; /* Alinea los elementos en los extremos */
-    width: 100%; /* Asegura que el footer ocupe todo el ancho disponible */
+    justify-content: space-around; /* Alinea los elementos en los extremos */
+    width: 100%; /* Hace que el footer ocupe todo el ancho disponible */
     background-color: #183661;
     color: white;
     padding: 10px;
-    margin-top: auto; /* Esto asegura que el footer quede al final */
+    margin-top: auto;
+
 }
 
 .textoFooter {
-    margin-top: 18px;
+    margin-top: 30px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -174,13 +172,9 @@ header {
 
 /*------------- CARDS ----------------*/
 
-.ProgramacionSoftwares {
-    display: flex;
-}
 
 .card {
-    margin: 5px;
-    padding: 10px;
+    margin: -2px;
 }
 
 .card-text {
