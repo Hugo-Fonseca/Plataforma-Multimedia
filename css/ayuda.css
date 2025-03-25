@@ -1,0 +1,67 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+}
+body{
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+    width: 100%;
+    height: auto;
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+    background-color: #9FBDE0;
+    box-sizing: border-box; /*sirve para que el ancho y la altura de un elemento incluyan el relleno y el borde. */
+}
+
+.tituloCategoria{
+    background-color: #fff;
+    color: #1c3b6c;
+    padding: 5px;
+    /*margin-top: -20.5%;
+    margin-bottom: 1.5%;*/
+    border-radius: 12px;
+    margin-top: 2%;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.pocisionTitulosCat{
+    align-items: start;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.icono-Ayuda{
+    color: #1c3b6c;
+}
+
+.fondo{
+    background-color: #9FBDE0;
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+    box-sizing: border-box; /*sirve para que el ancho y la altura de un elemento incluyan el relleno y el borde. */
+
+}
+
+.cuadroInfoAyuda{
+    display:flexbox;
+    position:relative;
+    background-color: #fff;
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    margin: 20px; /* Espaciado externo */
+    /*max-height: 300px;*/
+    /*max-width: 3000px;*/
+}
+
+.TituloSeccion{
+    color: #1c3b6c;
+    align-items: center;
+}
+
+.subTitulo{
+    color: #1c3b6c;
+}
