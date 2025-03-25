@@ -1,112 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-CO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MultiStand</title>
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/mayoria.css">
-    <link rel="stylesheet" href="../css/tabletas.css">
+    <link rel="stylesheet" href="css/Programacion.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Programacion</title>
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <a href="../index.html">
-                <img class="logo" src="../img/aprendizaje-electronico.png" alt="Logo">
+        <div class="logo-container d-flex align-items-center">
+            <a href="index.html">
+                <img class="logo" src="img/aprendizaje-electronico.png" alt="Logo">
             </a>
             <h1 class="Titulo">MULTI <br> STAND</h1>
         </div>
+        
+        
+        <input class="busqueda " type="text" placeholder="Buscar productos...">
+        
+        
     
-        <input class="busqueda" type="text" placeholder="Buscar productos...">
-    
-        <div class="iconos">
-            <div class="icono">
-                <img class="ayuda" src="../img/interrogatorio.png" alt="Ayuda">
-                <h2 class="dudas">Ayuda</h2>
+        <div class="HelpIcono d-flex">
+            <div class="d-flex align-items-center gap-2">
+                <img class="AyudaImg" src="img/interrogatorio.png" alt="Ayuda">
+                <h2 class="AyudaText">Ayuda</h2>
             </div>
         </div>
     </header>
-    
-    <nav class="menu">
-        <a href="Computadores.html">Computadoras</a>
-        <a href="tabletas.html">Tabletas <br> Gráficas</a>
-        <a href="SoftwareFreeDesign.html">Programas <br> Gratuitos Diseño</a>
-        <a href="programacion.html">Programación</a>
-        <a href="licenciasDesign.html">Licencias de <br> Programas Diseño</a>
+
+    <nav class="navbar navbar-expand-lg menu">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Computadores.html">Computadoras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tabletas.html">Tabletas Gráficas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progFreeDesign.html">Programas Gratuitos de Diseño</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programacion.html">Programación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="licenciasDesign.html">Licencias de Programas de Diseño</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <section class="espacioFondoTituloCat">
-        <h1 class="tituloCategoria">💻 PROGRAMACIÓN</h1>
-    </section>
-    
-    
-    <section class="productos">
-        <div class="producto">
-            <a href="../informacion/InfromProg/informProg1.html">
-                <img src="../img/unity.png" alt="unity">
-            </a>
-            <h2>Unity</h2>
-        </div>
-        
-        <div class="producto">
-            <a href="../informacion/InfromProg/informProg2.html">
-                <img src="../Img_Programacion/Atom.jpeg" alt="Atom">
-            </a>
-            <h2>LENOVO - 82YT00NYIM</h2>
-        </div>
-        
-        <div class="producto">
-            <a href="../informacion/InfromProg/informProg3.html">
-                <img src="../Img_Programacion/Eclipse.jpeg" alt="Eclipse">
-            </a>
-            <h2>Eclipse</h>
-        </div>
-        
-        <div class="producto">
-            <a href="../informacion/InfromProg/informProg4.html">
-                <img src="../Img_Programacion/Pycharm.jpeg" alt="Pycharm">
-            </a>
-            <h2>Pycharm</h2>
-        </div>
-        
-        <div class="producto">
-            <a href="../informacion/InfromProg/informProg5.html">
-                <img src="../Img_Programacion/VisualStudioCode.jpeg" alt="VisualStudioCode">
-            </a>
-            <h2>Visual Studio Code</h2>
-        </div>
-        
-        <div class="producto">
-            <a href="../informacion/InfromProg/informProg6.html">
-                <img src="../Img_Programacion/Xcode.jpeg" alt="Xcode">
-            </a>
-            <h2>Xcode</h2>
-        </div>
-    </section>
-    
-    <footer class="custom-footer">
-        <section class="contenidoFooter d-flex justify-content-between">
-            <!--Esto ultimo permite usar felxbox para alinear elementos-->
-            <div class="nombresIntegrantes">
-                <h4>Diana Sofia Benavides Monroy. Código: 55823004
-                    <br>
-                    Hugo Alexander Fonseca Chaparro. Código: 55822501
-                    <br>
-                    Juan Manuel Torres Celis Código: 55823018
-                </h4>
+    <main class="ProgramacionSoftwaresContainer mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card VSC -->
+            <div class="col">
+                <section class="VSC-Card">
+                    <div class="card text-center p-3 ms-5">
+                        <img class="VSC-Img mx-auto"   src="IMG LOGOS PROGRAMACION/Logo_de_Visual_Studio_Code.png" alt="VSC-Logo" >
+                        <div class="card-body">
+                        <h5 class="card-title">Visual Studio Code</h5>
+                        <a href="https://code.visualstudio.com/" target="_blank"  class="btn btn-primary">Descargar</a>
+                        </div>
+                    </div>  
+                </section>
             </div>
-            <!--bb8f439 (Separacion css y html)-->
-            <div class="info">
-                <h2>MULTI STAND</h2>
-                <img class="logoFooter" src="../img/aprendizaje-electronico.png" alt="logoMultiStand">
-                <h5>Repositorio del Ingeniero Multimedia</h5>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Eclipse Card -->
+            <div class="col">
+                <section class="Eclipse-Card">
+                    <div class="card text-center p-3">
+                        <img class="Eclipse-Img mx-auto"   src="IMG LOGOS PROGRAMACION/Eclipse_Logo.webp" alt="Eclipse-Logo" >
+                        <div class="card-body">
+                        <h5 class="card-title">Eclipse IDE</h5>
+                        <a href="https://eclipseide.org/" target="_blank"  class="btn btn-primary">Descargar</a>
+                        </div>
+                    </div>  
+                </section>
             </div>
-        </section>
-        <p class="textoFooter">&copy; 2025 MULTI STAND</p>
-    </footer>
+            <!-- NetBeans Card -->
+            <div class="col">
+                <section class="Netbeans-Card">
+                    <div class="card text-center p-3 me-5">
+                        <img class="Netbeans-Img mx-auto"   src="IMG LOGOS PROGRAMACION/Apache_NetBeans_Logo.png" alt="Netbeans-Logo" >
+                        <div class="card-body">
+                        <h5 class="card-title">Apache Netbeans</h5>
+                        <a href="https://netbeans.apache.org/front/main/index.html" target="_blank"  class="btn btn-primary">Descargar</a>
+                        </div>
+                    </div>  
+                </section>
+            </div>
+            <!-- Sublime Text Card -->
+            <div class="col">
+                <section class="SublimeText-Card">
+                    <div class="card text-center p-3 ms-5">
+                        <img class="SublimeText-Img mx-auto"   src="IMG LOGOS PROGRAMACION/Sublime_Text_logo.png" alt="SublimeText-Logo" >
+                        <div class="card-body">
+                        <h5 class="card-title">Sublime Text</h5>
+                        <a href="https://www.sublimetext.com/" target="_blank"  class="btn btn-primary">Descargar</a>
+                        </div>
+                    </div>  
+                </section>
+            </div>
+            <!-- Atom Card -->
+            <div class="col">
+                <section class="Atom-Card">
+                    <div class="card text-center p-3">
+                        <img class="VSC-Img mx-auto"   src="IMG LOGOS PROGRAMACION/Atom-logo.png" alt="Atom-Logo" >
+                        <div class="card-body">
+                        <h5 class="card-title">Atom IDE</h5>
+                        <a href="https://atom-editor.cc/" target="_blank"  class="btn btn-primary">Descargar</a>
+                        </div>
+                    </div>  
+                </section>
+            </div>
+            <!-- Brackets Card -->
+            <div class="col">
+                <section class="Brackets-Card">
+                    <div class="card text-center p-3 me-5">
+                        <img class="VSC-Img mx-auto"   src="IMG LOGOS PROGRAMACION/Brackets_Logo.png" alt="Brackets-Logo" >
+                        <div class="card-body">
+                        <h5 class="card-title">Brackets IDE</h5>
+                        <a href="https://brackets.io/" target="_blank"  class="btn btn-primary">Descargar</a>
+                        </div>
+                    </div>  
+                </section>
+            </div>
+        </div>   
+    </main>
 
+   <!-- Footer -->
+   <footer class="custom-footer">
+        <div class="nombresIntegrantes">
+            <p class="Estudiante">Diana Sofia Benavides Monroy.  Código: 55823004</p>
+            <p class="Estudiante">Hugo Alexander Fonseca Chaparro.  Código: 55822501 </p>
+            <p class="Estudiante">Juan Manuel Torres Celis. Código: 55823018 </p>
+        </div>
+
+        <div >
+            <p class="textoFooter">&copy; 2025 MULTI STAND</p>
+        </div>
+
+        <div class="info">
+            <h1 class="TituloFooter">MULTI STAND</h1>
+            <img class="logoFooter" src="img/aprendizaje-electronico.png" alt="logoMultiStand">
+            <p class="textoFooter2">Repositorio del Ingeniero Multimedia</p>
+         </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
