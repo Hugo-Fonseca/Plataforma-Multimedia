@@ -6,7 +6,7 @@ html {
     width: 100%;
     min-height: 100vh; /* Cambié height: 100% a min-height: 100vh */
     overflow-x: hidden !important; /* Evita el desplazamiento horizontal */
-    
+
 }
 
 /* CSS que manejara todo el body del html de la sección Programación */
@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Garantiza que el cuerpo ocupe al menos toda la altura de la pantalla */
     margin: 0; /* Asegura que no haya márgenes indeseados */
+    padding: 0%;
 }
 
 /* Estilo que maneja el header */
@@ -26,7 +27,7 @@ header {
     justify-content: space-between;
     background-color: #183661;
     color: white;
-    padding: 20px;
+    padding: 1% 2%;
     width: 100%;
     box-sizing: border-box;
 }
@@ -35,7 +36,7 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 /* Hace que el logo tenga un tamaño menor y se ajuste al header */
@@ -84,8 +85,6 @@ header {
    color: #333;
 }
 
-
-
 /* Ajusta la imagen del logo de ayuda para que se vea mejor en el header */
 .AyudaImg {
     width: 40px; /* Tamaño uniforme */
@@ -119,6 +118,8 @@ header {
     text-align: center;
     font-weight: bold;
     padding: 10px 15px;
+    margin-top: 3%;
+    margin-bottom: 3%;
     border-radius: 10px; /* Bordes redondeados */
     transition: background-color 0.3s, transform 0.2s;
 }
@@ -135,6 +136,20 @@ header {
     gap: 15px; 
 }
 
+/*-------TITULO PARA LA PAGINA DE PROGRAMACION ---------*/
+
+.TituloPage{
+    padding-left: 3%;
+}
+
+.TextTitulo{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+
 /*------- FOOTER ---------------- */
 
 .custom-footer {
@@ -145,7 +160,7 @@ header {
     color: white;
     padding: 10px;
     margin-top: auto;
-
+    
 }
 
 .textoFooter {

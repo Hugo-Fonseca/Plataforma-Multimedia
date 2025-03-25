@@ -1,15 +1,20 @@
-html{
+html {
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0; /* Eliminar márgenes por defecto */
-    padding: 0; /* Eliminar padding por defecto */
-    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+    width: 100%;
+    min-height: 100vh; /* Cambié height: 100% a min-height: 100vh */
+    overflow-x: hidden !important; /* Evita el desplazamiento horizontal */
+
 }
-body{
-    margin: 0; /* Eliminar márgenes por defecto */
-    padding: 0; /* Eliminar padding por defecto */
-    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
-    background-color: #9FBDE0;
-    box-sizing: border-box; /*sirve para que el ancho y la altura de un elemento incluyan el relleno y el borde. */
+body {
+    background-color: #ffffff !important;
+    box-sizing: border-box; /* Para que el ancho y la altura de los elementos incluyan relleno y borde */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garantiza que el cuerpo ocupe al menos toda la altura de la pantalla */
+    margin: 0; /* Asegura que no haya márgenes indeseados */
+    padding: 0%;
 }
 
 /* Estilos generales del header */
@@ -24,13 +29,48 @@ header {
     box-sizing: border-box;
 }
 
-footer{
-    background-color:#183661;
+/*------- FOOTER ---------------- */
+
+.custom-footer {
+    display: flex;
+    justify-content: space-around; /* Alinea los elementos en los extremos */
+    width: 100%; /* Hace que el footer ocupe todo el ancho disponible */
+    background-color: #183661;
     color: white;
+    padding: 10px;
+    margin-top: auto;
+
+}
+
+.textoFooter {
+    margin-top: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nombresIntegrantes {
+    margin-top: 10px;
+}
+.Estudiante {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.info{
     text-align: center;
-    font-size: 1em;
-    width: 100%;
-    padding: 2rem;;
+    margin-top: 6px;
+}
+
+.logoFooter{
+    width: 25px;
+}
+
+.TituloFooter{
+    font-size: 14px;
+}
+
+.textoFooter2{
+ font-size: 14px;
 }
 
 
@@ -116,15 +156,14 @@ footer{
     margin: 0;
 }
 
+/*------- BARRA DE NAVEGACION --------------*/
+
+/* Ajusta toda la parte del contenedor del menu */
 .menu {
     background-color: #1e60a9;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;/*gap se utiliza para definir el espacio entre elementos en un contenedor que utiliza un modelo de diseño de cuadrícula (grid) o un diseño de flexbox.*/
-    /*gap: 10px;/*gap se utiliza para definir el espacio entre elementos en un contenedor que utiliza un modelo de diseño de cuadrícula (grid) o un diseño de flexbox.*/
 }
 
+/* Ajusta los divs de los links del menu */
 .menu a {
     background-color: #174c88; /* Color más oscuro para los botones */
     color: white;
@@ -133,8 +172,21 @@ footer{
     text-align: center;
     font-weight: bold;
     padding: 10px 15px;
+    margin-bottom: 3%;
     border-radius: 10px; /* Bordes redondeados */
     transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hace que cuando pasemos el mouse por encima del los links cambien de color su fondo y se agrande una escala de 1.05 */
+.menu a:hover {
+    background-color: #0f3969;
+    transform: scale(1.05); /* Efecto de crecimiento al pasar el mouse */
+    text-decoration: none;
+}
+
+/* Ajusta el espacio entre los enlaces */
+.navbar-nav {
+    gap: 15px; 
 }
 
 /* Estilos para el carrusel */
@@ -197,53 +249,4 @@ footer{
     padding: 15px; 
     cursor: pointer;
     border-radius: 5px;
-}
-
-.menu a:hover {
-    background-color: #123b6b;
-    transform: scale(1.05); /* Efecto de crecimiento al pasar el mouse */
-    text-decoration: none;
-}
-
-footer{
-    background-color:#183661;
-    color: white;
-    text-align: center;
-    font-size: 1em;
-    width: 100%;
-    padding: 0.1px;
-    padding-bottom: -1px;
-}
-
-/*.custom-footer{
-
-}*/
-
-.nombresIntegrantes{
-    padding-top: -702px;
-    flex: 0.9;
-}
-
-.contenidoFooter{
-    display: flex;
-    justify-content: space-between;/*Espacio entre los elementos*/
-    align-items: center;
-}
-
-.info{
-    align-items: end;
-    padding-right: 82px;
-    padding-top: 52px;
-}
-
-.logoFooter{
-    display: flex;
-    position: relative;
-    align-items: end;
-    /*align-items: start;*/
-    width: 92px;
-    /*top: -3px;*/
-    /*left: 625px;*/
-    left: 130px;
-    bottom:1 px;
 }
