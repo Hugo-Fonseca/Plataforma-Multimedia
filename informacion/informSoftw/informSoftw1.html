@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computadores</title>
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/inforación.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../../index.html">
+                <img class="logo" src="../../img/aprendizaje-electronico.png" alt="Logo">
+            </a>
+            <h1 class="Titulo">MULTI <br> STAND</h1>
+        </div>
+    
+        <input class="busqueda" type="text" placeholder="Buscar productos...">
+    
+        <div class="iconos">
+            <div class="icono">
+                <img class="ayuda" src="../../img/interrogatorio.png" alt="Ayuda">
+                <h2 class="dudas">Ayuda</h2>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="menu">
+        <a href="../../mayoria/Computadores.html">Computadoras</a>
+        <a href="../../mayoria/tabletas.html">Tabletas <br> Gráficas</a>
+        <a href="../../mayoria/progFreeDesign.html">Programas <br> Gratuitos Diseño</a>
+        <a href="../../mayoria/programacion.html">Programación</a>
+        <a href="../../mayoria/licenciasDesign.html">Licencias de <br> Programas Diseño</a>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Columna Izquierda - Carrusel -->
+            <div class="col-md-5">
+                <div id="carouselProducto" class="carousel slide carrusel-producto" data-bs-ride="carousel">
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselProducto" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselProducto" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselProducto" data-bs-slide-to="2"></button>
+                    </div>
+    
+                    <!-- Contenido del Carrusel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../../img/Wacom_tablet.jpg" class="d-block w-100 img-fluid" alt="Lenovo G2 - Vista Frontal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/lenovo2.webp" class="d-block w-100 img-fluid" alt="Lenovo G2 - Lateral">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/lenovo3.webp" class="d-block w-100 img-fluid" alt="Lenovo G2 - Posterior">
+                        </div>
+                    </div>
+    
+                    <!-- Controles del Carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Columna Derecha - Información del Producto -->
+            <div class="col-md-7">
+                <div class="info-box">
+                <p>El Leenovo G2 ofrece un gran rendimiento para ejecutar sus aplicaciones más exigentes simultáneamente. Experimente una capacidad de respuesta rápida gracias a la tecnología líder en la industria. Enriquezca su experiencia de sonido con los altavoces Premium de 3Wx2 Harman, certificados con códec Realtek.</p>
+                <button class="btn-carrito" onclick="window.open('https://www.lenovo.com/co/es/p/portatiles/thinkbook/thinkbook-serie/lenovo-thinkbook-14-g2-itl/xxtbxtmi400?orgRef=https%253A%252F%252Fwww.google.com%252F&cid=co:sem:pmax|se|google|pmax+amd||||21040024791|||pmax|mixed|com&gad_source=1&gclid=Cj0KCQjw4v6-BhDuARIsALprm33IhA24P5TDNkqYV5saBqt5su2uewoZDaNVk-SbcHGelvvuP35tKXYaAlJpEALw_wcB', '_blank')">Ir a la pagina</button>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Columna Izquierda - "Te interesaría" -->
+            <div class="col-md-5">
+                <h3 class="titulo-interes">Te interesaría</h3>
+                <div class="imagenes-interes">
+                    <div class="imagen-cuadro">
+                        <img src="../../img/Wacom_tablet.jpg" class="img-fluid" alt="Producto relacionado 1">
+                    </div>
+                    <div class="imagen-cuadro">
+                        <img src="../../img/Unity1.webp" class="img-fluid" alt="Producto relacionado 2">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Columna Derecha - Información del Producto -->
+            <div class="col-md-7">
+                <div class="info-box">
+                    <ul class="caracteristicas">
+                        <li><strong>Desbloqueo facial:</strong> Ingresa fácil sin usar las manos.</li>
+                        <li><strong>Teclado y mouse inalámbrico:</strong> Comodidad y elegancia.</li>
+                        <li><strong>Audio de alta definición (HD):</strong> Códec Realtek.</li>
+                        <li><strong>Gráficos Intel UHD integrados.</strong></li>
+                        <li><strong>Pantalla de alta definición:</strong> Imágenes más nítidas.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="custom-footer">
+        <section class="contenidoFooter d-flex justify-content-between"> <!--Esto ultimo permite usar felxbox para alinear elementos-->
+            <div class="nombresIntegrantes">
+                <h4>Diana Sofia Benavides Monroy.  Código: 55823004
+                    <br>
+                    Hugo Alexander Fonseca Chaparro.   Código: 55822501
+                    <br>
+                    Juan Manuel Torres Celis         Código: 55823018
+                </h4>
+            </div>
+          <!--bb8f439 (Separacion css y html)-->
+          <div class="info">
+             <h2>MULTI STAND</h2>
+             <img class="logoFooter" src="../../img/aprendizaje-electronico.png" alt="logoMultiStand">
+             <h5>Repositorio del Ingeniero Multimedia</h5>
+             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+          </div>
+        </section>
+        <p class="textoFooter">&copy; 2025 MULTI STAND</p>
+     </footer>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
