@@ -1,3 +1,4 @@
+/* Reseteamos los parametros del CSS del navegador */
 html {
     margin: 0;
     padding: 0;
@@ -7,6 +8,8 @@ html {
     overflow-x: hidden !important; /* Evita el desplazamiento horizontal */
 
 }
+
+/* CSS que manejara todo el body del html de la sección Programación */
 body {
     background-color: #ffffff !important;
     box-sizing: border-box; /* Para que el ancho y la altura de los elementos incluyan relleno y borde */
@@ -17,7 +20,7 @@ body {
     padding: 0%;
 }
 
-/* Estilos generales del header */
+/* Estilo que maneja el header */
 header {
     display: flex;
     align-items: center;
@@ -27,6 +30,76 @@ header {
     padding: 1% 2%;
     width: 100%;
     box-sizing: border-box;
+}
+
+/* Hace que el logo y el texto estén un poco separados entre sí */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Hace que el logo tenga un tamaño menor y se ajuste al header */
+.logo {
+    width: 60px; 
+    height: auto;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+/* Ajusta el texto "MULTI STAND" del header */
+.Titulo {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 0;
+}
+.search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+/* Ajusta el tamaño del input de busqueda del header */
+.busqueda {
+  padding: 10px;
+  padding-right: 40px; /* Para dejar espacio para el ícono */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  width: 950px;
+}
+  
+.search-button {
+   position: absolute;
+   right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   background: transparent;
+   border: none;
+   cursor: pointer;
+}
+  
+.search-button i {
+   font-size: 18px;
+   color: #333;
+}
+
+/* Ajusta la imagen del logo de ayuda para que se vea mejor en el header */
+.AyudaImg {
+    width: 40px; /* Tamaño uniforme */
+    height: auto;
+}
+
+/*Agranda un poco la imagen cuando el mouse pasa x encima*/
+.AyudaImg:hover{
+    transform: scale(1.1);
+}
+
+/* Ajusta el texto de "Ayuda" en el header */
+.AyudaText {
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 /*------- FOOTER ---------------- */
@@ -73,87 +146,37 @@ header {
  font-size: 14px;
 }
 
+/*------- BARRA DE NAVEGACION --------------*/
 
-/* Contenedor del logo y título */
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+/* Ajusta toda la parte del contenedor del menu */
+.menu {
+    background-color: #1e60a9;
 }
 
-.logo {
-    width: 60px; /* Tamaño más manejable */
-    height: auto;
-    
+/* Ajusta los divs de los links del menu */
+.menu a {
+    background-color: #174c88; /* Color más oscuro para los botones */
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-bottom: 3%;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.logo:hover{
-    transform: scale(1.1);
+/* Hace que cuando pasemos el mouse por encima del los links cambien de color su fondo y se agrande una escala de 1.05 */
+.menu a:hover {
+    background-color: #0f3969;
+    transform: scale(1.05); /* Efecto de crecimiento al pasar el mouse */
+    text-decoration: none;
 }
 
-.Titulo {
-    font-size: 1.8rem;
-    text-align: left;
-    margin: 0;
-}
-
-/* Barra de búsqueda */
-
-.search-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-.busqueda {
-    padding: 10px;
-    padding-right: 40px; /* Para dejar espacio para el ícono */
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    width: 950px;
-  }
-  
-  .search-button {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .search-button i {
-    font-size: 18px;
-    color: #333;
-  }
-
-/* Contenedor de iconos */
-.iconos {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Espacio entre los iconos */
-}
-
-/* Estilos para cada icono con texto */
-.icono {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.ayuda {
-    width: 40px; /* Tamaño uniforme */
-    height: auto;
-}
-
-.ayuda:hover{
-    transform: scale(1.1);
-}
-
-.dudas, .micarrito {
-    font-size: 1.5rem;
-    margin: 0;
+/* Ajusta el espacio entre los enlaces */
+.navbar-nav {
+    gap: 15px; 
 }
 
 /*------- BARRA DE NAVEGACION --------------*/
